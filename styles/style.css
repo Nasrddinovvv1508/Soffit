@@ -93,9 +93,17 @@ nav .auth {
     margin-bottom: 50px;
 }
 
+.main_container .blur-img {
+    position: absolute;
+    right: 0;
+    top: 100px;
+    z-index: -1;
+}
+
 .main_background img {
     width: 100%;
     margin: 0 auto;
+    z-index: 5;
 }
 
 .btn {
@@ -230,6 +238,18 @@ nav .auth {
     margin-bottom: 100px;
 }
 
+.portfolio-section {
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.blur {
+    position: absolute;
+    left: 0px;
+    top: -400px;
+    z-index: -3;
+}
+
 .img-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -239,6 +259,10 @@ nav .auth {
         -ms-flex-direction: row;
             flex-direction: row;
     gap: 5px;
+}
+
+.img-wrapper img {
+    z-index: 3;
 }
 
 .img-wrapper div {
@@ -253,6 +277,18 @@ nav .auth {
     gap: 5px;
 }
 
+.blur-wrapper {
+    position: relative;
+}
+
+.blur-wrapper .third-blur {
+    position: absolute;
+    right: 0px;
+    bottom: -630px;
+    z-index: -4;
+
+}
+
 
 .full_background {
     margin-bottom: 50px;
@@ -261,6 +297,7 @@ nav .auth {
 .full_background img {
     width: 100%;
     margin: 0 auto;
+    z-index: 4;
 }
 
 
@@ -300,7 +337,7 @@ nav .auth {
     background-color: transparent;
     border:1px solid var(--white-color);
     border-radius: 50px;
-    color: var(--gray-color);
+    color: var(--white-color);
 }
 
 .footer_container form button {
@@ -370,4 +407,24 @@ nav .auth {
     /* Services PAGE */
 .cards-bottom {
     margin-bottom: 210px;
+}
+
+main .main-blur {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    z-index: -5;
+}
+
+
+    /* Services footer */
+.services-footer_container {
+    position: relative;
+}
+
+.services-footer_container .footer-blur {
+    position: absolute;
+    left: 0px;
+    top: -500px;
+    z-index: -6;
 }
