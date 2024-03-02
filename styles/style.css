@@ -340,6 +340,10 @@ nav .auth {
     color: var(--white-color);
 }
 
+.footer_container form input:focus {
+    outline: var(--white-color);
+}
+
 .footer_container form button {
     width: 127px;
 }
@@ -427,4 +431,67 @@ main .main-blur {
     left: 0px;
     top: -500px;
     z-index: -6;
+}
+
+
+    /* About PAGE */
+.about-main_container {
+    margin-bottom: 110px;
+}
+
+/* About carousel */
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .carousel__track {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .carousel__item {
+    flex: 0 0 100%;
+  }
+  
+  .carousel__toggle {
+    display: none;
+  }
+  
+  .carousel__toggle:checked + .carousel__track {
+    transform: translateX(-100%);
+  }
+  
+  .carousel__nav {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .carousel__prev, .carousel__next {
+    cursor: pointer;
+  }
+  
+  .carousel__prev::before {
+    content: '‹';
+  }
+  
+  .carousel__next::before {
+    content: '›';
+  }
+  
+
+.carousel__nav {
+    color: var(--white-color);
+    font-size: larger;
+}
+
+.carousel img {
+    border-radius: 21px;
+    border-top-right-radius: 21px;
+    border-bottom-right-radius: 21px;
 }
